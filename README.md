@@ -1,5 +1,5 @@
 # Date:
-4/11/24
+09.08.25
 # AIM
 To write a html webpage page to display your slot timetable.
 
@@ -22,147 +22,127 @@ Add your timetable using `<td>` tag.
 ## STEP 6
 Execute the program using runserver command.
 
-# PROGRAM sudharsan.s
-          24009664
-
-<html lang="en">
+# PROGRAM sudharsan.s (212224040335)
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SLOT TIMETABLE - Sudharsan S (24009664)</title>
+    <title>Slot Time Table</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%; /* Set table width to match image width */
-        }
-
-        th, td {
-            border: 8px solid black;
-            padding: 6.5px;
+        body {
+            font-family: Arial, sans-serif;
             text-align: center;
         }
-
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        table, th, td {
+            border: 2px solid black;
+        }
         th {
-            background-color: palegoldenrod;
+            background-color: yellow;
         }
-
-        .day {
-            background-color: green;
+        td {
+            background-color: cyan;
+            padding: 10px;
         }
-
-        img {
-            width: 100%; /* Set image width to match table width */
-            height: auto;
+        .free {
+            background-color: cyan;
+        }
+        .header {
+            background-color: yellow;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>SLOT TIME TABLE - SUDHARSAN S</h1>
 
-    <img src="C:\Users\sudharshan\OneDrive\Pictures\Screenshots\Screenshot 2024-10-19 110840.png" alt="Timetable Logo">
-    
+    <!-- College Logo Header -->
+    <img src="c:\Users\sudharshan\OneDrive\Documents\micro folder\OneDrive\Pictures\Screenshots 1\Screenshot 2024-10-19 110840.png"alt="Saveetha Engineering College" style="width:100%;max-width:900px;">
+
+    <h3>SLOT TIME TABLE - SUDHARSAN.S (212224040335)</h3>
+
     <table>
-        <thead>
-            <tr>
-                <th>TIME</th>
-                <th>MONDAY</th>
-                <th>TUESDAY</th>
-                <th>WEDNESDAY</th>
-                <th>THURSDAY</th>
-                <th>FRIDAY</th>
-                <th>Saturday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>8:00 AM - 10:00 AM</td>
-                <td>DIGITAL</td>
-                <td>ENVIRONMENTAL SCIENCE</td>
-                <td>FREE HOUR</td>
-                <td>ML</td>
-                <td>ML</td>
-                <td>FREE HOUR</td>
-            </tr>
-            <tr>
-                <td>10:00 AM - 12:00 PM</td> <!-- Fixed AM/PM format -->
-                <td>PHYSICS</td>
-                <td>FREE HOUR</td>
-                <td>PYTHON PROGRAMMING</td> <!-- Fixed typo -->
-                <td>MATHS</td>
-                <td>WEB APPLICATIONS</td>
-                <td>WEB</td>
-            </tr>
-            <tr>
-                <td>12:00 PM - 1:00 PM</td>
-                <td colspan="6">LUNCH</td>
-            </tr>
-            <tr>
-                <td>1:00 PM - 3:00 PM</td>
-                <td>WEB</td>
-                <td>DIGITAL</td>
-                <td>FREE HOUR</td>
-                <td>PHYSICS</td>
-                <td>PYTHON</td>
-                <td>PROBABILITY</td>
-            </tr>
-        </tbody>
+        <tr class="header">
+            <th>Day/Time</th>
+            <th>8-10</th>
+            <th>10-12</th>
+            <th>12-1</th>
+            <th>1-3</th>
+            <th>3-5</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>Computer Architecture (19CS305)</td>
+            <td>FREE SLOT</td>
+            <td rowspan="6">LUNCH</td>
+            <td>Fundamentals of C Programming (19AI304)</td>
+            <td>Computer Networks (19CS406)</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="4">LEAVE</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Cryptography (19CS415)</td>
+            <td>Fundamentals of C Programming (19AI304)</td>
+            <td>Mentor Meet</td>
+            <td>Financial Accounting (19MS154) <br> (4-5 PM)</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td class="free">FREE SLOT</td>
+            <td>Computer Networks (19CS406)</td>
+            <td>Cryptography (19CS415)</td>
+            <td>Computer Architecture (19CS305)</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td class="free">FREE SLOT</td>
+            <td>DBMS (19CS404)</td>
+            <td>FOWA (19AI414)</td>
+            <td class="free">FREE SLOT</td>
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td>FOWA (19AI414)</td>
+            <td>Financial Accounting (19MS154)</td>
+            <td class="free">FREE SLOT</td>
+            <td>DBMS (19CS404)</td>
+        </tr>
     </table>
 
     <br><br>
 
-    <h1>Subject Code</h1>
     <table>
-        <thead>
-            <tr>
-                <th>S.No</th>
-                <th>Subject Code</th>
-                <th>Subject Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>SH3214</td>
-                <td>Quantum Physics</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>19MA222</td>
-                <td>Maths</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>19EE404</td>
-                <td>Digital Electronics</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>19CS420</td>
-                <td>IOT</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>19AI414</td>
-                <td>Web Application</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>19AI410</td>
-                <td>Machine Learning</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>19AI301</td>
-                <td>Python Programming</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>S. No.</th>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+        </tr>
+        <tr><td>1</td><td>19CS305</td><td>Computer Architecture</td></tr>
+        <tr><td>2</td><td>19AI304</td><td>Fundamentals of C Programming</td></tr>
+        <tr><td>3</td><td>19CS406</td><td>Computer Networks</td></tr>
+        <tr><td>4</td><td>19CS415</td><td>Cryptography</td></tr>
+        <tr><td>5</td><td>19MS154</td><td>Financial Accounting</td></tr>
+        <tr><td>6</td><td>19CS404</td><td>Database Management Systems</td></tr>
+        <tr><td>7</td><td>19AI414</td><td>Fundamentals of Web Application Development</td></tr>
     </table>
+
 </body>
 </html>
 
+         
+
+    <h1>SLOT TIME TABLE - SUDHARSAN S</h1>
+    
+
+   
+
 # OUTPUT
-![Screenshot 2024-11-25 133110](https://github.com/user-attachments/assets/f8003780-d779-4695-ae9a-f0c601e6a975)
-![Screenshot 2024-11-25 133139](https://github.com/user-attachments/assets/3b11ceaf-df3b-4938-8946-6fa77ef30465)
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/9cd2ccf6-f7ae-4c4b-af79-cc458b839854" />
 
 
 # RESULT
